@@ -2,9 +2,39 @@
 <html>
 <head>
     <title>Did you blame Matt today?</title>
+    <style type="text/css">
+        h1 {
+            width:100px;
+            height:100px;
+            padding-top: 30px;
+            text-align: center;
+            background-color: green;
+            border-radius: 50%;
+            box-sizing: border-box;
+            color: white;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        }
+        @keyframes spin {
+            from {
+                transform:rotateY(0deg);
+                color:green;
+            }
+            to {
+                transform:rotateY(2520deg);
+                color: white;
+            }
+        }
+        h1.animated {
+            animation-name: spin;
+            animation-duration: 2800ms;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>YES</h1>
+    <h1 class="animated">YES</h1>
     <p>If not you probably should...</p>
 </body>
 </html>
